@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+    <include android:id="@+id/toolbarResult" layout="@layout/toolbar">
+    </include>
+
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/winnerIcon"
+        android:src="@mipmap/winner"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/toolbarResult"/>
+
+    <TextView
+        android:layout_below="@+id/winnerIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:text="Username"
+        android:textSize="20sp"
+        android:id="@+id/textUsername"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:layout_below="@+id/textUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:text="Toplam Puanınız"
+        android:textSize="20sp"
+        android:id="@+id/textPointString"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:layout_below="@+id/textPointString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:text="90"
+        android:textSize="20sp"
+        android:id="@+id/textPoint"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/goMenuBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textPoint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Ana Menü" />
+
+
+
+</RelativeLayout>

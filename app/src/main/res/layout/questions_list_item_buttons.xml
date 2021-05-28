@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="350dp"
+    android:id="@+id/questionsCardView"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/progressBar"
+    app:cardCornerRadius="10dp"
+    android:padding="20dp"
+    android:layout_margin="20dp"
+    app:cardElevation="12dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/questionIcon"
+            android:src="@mipmap/questionmark"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/questionIcon"
+            android:textStyle="bold"
+            android:text="Soru"
+            android:textSize="20sp"
+            android:id="@+id/currentQuestionList"
+            android:layout_marginBottom="20dp"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:id="@+id/rgChoices">
+
+            <RadioButton
+                android:id="@+id/rbchoiceAList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="A şıkkı" />
+            <RadioButton
+                android:id="@+id/rbchoiceBList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rbchoiceA"
+                android:checked="false"
+                android:text="B şıkkı" />
+            <RadioButton
+                android:id="@+id/rbchoiceCList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rbchoiceB"
+                android:checked="false"
+                android:text="C şıkkı" />
+            <RadioButton
+                android:id="@+id/rbchoiceDList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rbchoiceC"
+                android:checked="false"
+                android:text="D şıkkı" />
+        </RadioGroup>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rgChoices"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:text="Güncelle"
+            android:id="@+id/updateBtn"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/updateBtn"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:text="Sil"
+            android:id="@+id/deleteBtn"
+            android:layout_marginBottom="20dp"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

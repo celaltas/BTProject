@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".CreateQuestionActivity">
+
+    <include
+        android:id="@+id/createQuestionToolbar"
+        layout="@layout/toolbar">
+
+    </include>
+
+    <EditText
+        android:id="@+id/getQuestionContent"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Soru İçeriği"
+        android:layout_margin="20dp"/>
+
+    <EditText
+        android:id="@+id/getChoiceA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:hint="A şıkkı" />
+
+    <EditText
+        android:id="@+id/getChoiceB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:hint="B şıkkı" />
+
+    <EditText
+        android:id="@+id/getChoiceC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:hint="C şıkkı" />
+
+    <EditText
+        android:id="@+id/getChoiceD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:hint="D şıkkı" />
+
+    <EditText
+        android:id="@+id/getChoiceTrue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="50dp"
+        android:hint="Doğru Cevap" />
+    <Button
+        android:id="@+id/createSingleQuestionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Oluştur"/>
+        
+
+
+</LinearLayout>

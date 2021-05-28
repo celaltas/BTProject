@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizMainActivity">
+
+    <include android:id="@+id/toolbarQuiz" layout="@layout/toolbar">
+    </include>
+
+    <ImageView
+        android:id="@+id/imageQuizApp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/toolbarQuiz"
+        android:src="@mipmap/quizapp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="100dp"/>
+    <Button
+        android:id="@+id/createQuestionBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageQuizApp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="10dp"
+        android:text="Soru Oluştur"/>
+
+    <Button
+        android:id="@+id/listQuestionsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/createQuestionBtn"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="10dp"
+        android:text="Listele"/>
+
+    <Button
+        android:id="@+id/startQuizBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listQuestionsBtn"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:text="Başlat"/>
+
+
+
+</RelativeLayout>
